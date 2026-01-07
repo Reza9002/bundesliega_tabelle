@@ -1,0 +1,170 @@
+/* Grundlegendes Styling für die gesamte Seite */
+.search-page {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 20px;
+  background-color: #f4f4f9;
+}
+
+.search-bar {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.search-label {
+  font-size: 16px;
+  margin-bottom: 8px;
+  color: #333;
+}
+
+.search-input {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  width: 100%;
+  max-width: 300px;
+}
+
+.games-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.game-box {
+  background-color: white;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.game-box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.game-header {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.game-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.team {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.team img {
+  width: 30px;
+  height: 30px;
+}
+
+.team span {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+  margin:0 20px;
+}
+
+.vs {
+  font-size: 20px;
+  font-weight: bold;
+  color: #444;
+  padding: 0 15px;
+}
+
+.game-result {
+  font-size: 16px;
+  color: #666;
+  font-weight: bold;
+}
+
+/* Hintergrundfarben für das Ergebnis des Spiels */
+
+/* Gewonnen */
+.game-box.won {
+  background-color: #2cb14b; /* Grüne Hintergrundfarbe für gewonnenes Team */
+  border-left: 5px solid #28a745; /* Grüner Rand für gewonnenes Team */
+}
+
+/* Verloren */
+.game-box.lost {
+  background-color: #ec0a1cf4; /* Rote Hintergrundfarbe für verlorenes Team */
+  border-left: 5px solid #f10a1d73; /* Roter Rand für verlorenes Team */
+}
+
+/* Unentschieden */
+.game-box.draw {
+  background-color: #fff3cd; /* Gelbe Hintergrundfarbe für Unentschieden */
+  border-left: 5px solid #ffc107; /* Gelber Rand für Unentschieden */
+}
+
+/* Für mobile Ansicht: */
+@media (max-width: 768px) {
+  .game-row {
+      flex-direction: column;
+      text-align: center;
+  }
+
+  .vs {
+      margin: 10px 0;
+  }
+}
+
+
+
+
+
+
+.game {
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  margin: 10px;
+  background-color: #f9f9f9;
+}
+
+.team-tabel {
+  display: flex;
+  flex-direction: row; /* Flexbox mit vertikaler Ausrichtung */
+  align-items: center; /* Zentriert alle Elemente */
+}
+
+.team-logo {
+  max-width: 100px;
+  max-height: 100px;
+  margin:0 2px; /* Abstand zum nächsten Inhalt */
+}
+
+.team-logo-tabelle {
+  max-width: 100px;
+  max-height: 100px;
+  margin-right: 30px; /* Abstand zum nächsten Inhalt */
+}
+
+.team-details {
+  display: flex;
+  flex-direction: row; /* Alle Details in einer Spalte anzeigen */
+  width: 100%;
+
+  gap: 10px; /* Abstand zwischen den Zeilen */
+}
+
+.tabelle-row {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
